@@ -1,0 +1,10 @@
+#VOID_ALIASES
+alias i='doas xbps-install -S; doas xbps-install -u xbps; doas xbps-install'
+alias u='doas xbps-install -S; doas xbps-install -u xbps; doas xbps-install -u'
+alias r='doas xbps-remove'
+alias q='doas xbps-query -Rs'
+
+#GENERAL_ALIASES
+alias ll='ls -la'
+alias c='clear'
+alias vm='vim'
