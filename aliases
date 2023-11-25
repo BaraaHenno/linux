@@ -4,7 +4,17 @@ alias u='doas xbps-install -S; doas xbps-install -u xbps; doas xbps-install -u'
 alias r='doas xbps-remove'
 alias q='doas xbps-query -Rs'
 
+#ARCH_ALIASES
+alias i='sudo pacman -S'
+alias y='sudo pacman -Syy'
+alias u='sudo pacman -Syyu'
+alias q='sudo pacman -Ss'
+
 #GENERAL_ALIASES
-alias ll='ls -la'
+alias ll='ls -la --color=auto'
+alias grep='grep --color=auto'
 alias c='clear'
 alias vm='vim'
+neofetch
+
+
