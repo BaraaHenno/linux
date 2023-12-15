@@ -5,10 +5,10 @@ alias r='doas xbps-remove'
 alias q='doas xbps-query -Rs'
 
 #ARCH_ALIASES
-alias i='sudo pacman -S'
-alias y='sudo pacman -Syy'
-alias u='sudo pacman -Syyu'
-alias q='sudo pacman -Ss'
+alias i='doas pacman -S'
+alias y='doas pacman -Syy'
+alias u='doas pacman -Syyu'
+alias q='doas pacman -Ss'
 
 #GENERAL_ALIASES
 alias ll='ls -la --color=auto'
