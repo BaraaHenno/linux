@@ -2,5 +2,7 @@
 ~/.local/share/fonts
 fc-cache -fv
 #font config file
-~/.config/fontconfig/fonts.conf
-
+~/.config/fontconfig/fonts.conf &
+sudo cp .config/fontsconfig/fonts.conf /etc/fonts/local.conf
+fc-cache -fv
+sudo fc-cache -fv
