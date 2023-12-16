@@ -3,6 +3,6 @@
 fc-cache -fv
 #font config file
 ~/.config/fontconfig/fonts.conf &
-sudo cp .config/fontsconfig/fonts.conf /etc/fonts/local.conf
+sudo cp .config/fontconfig/fonts.conf /etc/fonts/local.conf
 fc-cache -fv
 sudo fc-cache -fv
