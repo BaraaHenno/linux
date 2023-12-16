@@ -1,0 +1,10 @@
+super + shift + x
+        kill -10 $(pidof sxhkd)
+super + w
+        firefox
+super + KP_Add
+        pactl -- set-sink-volume 0 +5%
+super + KP_Subtract
+        pactl -- set-sink-volume 0 -5%
+#control + shift +k
+                xev -event keyboard
