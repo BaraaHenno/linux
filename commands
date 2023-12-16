@@ -1,2 +1,4 @@
 #update repository
 git pull origin main
+#update grub configuration
+grub-mkconfig -o /boot/grub/grub.cfg
