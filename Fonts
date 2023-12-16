@@ -1,0 +1,6 @@
+#where fonts should be located
+~/.local/share/fonts
+fc-cache -fv
+#font config file
+~/.config/fontconfig/fonts.conf
+
