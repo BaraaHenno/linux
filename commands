@@ -4,3 +4,5 @@ git pull origin main
 grub-mkconfig -o /boot/grub/grub.cfg
 #xev
 xev -event keyboard
+#restart sxhkd
+kill -10 $(pidof sxhkd)
