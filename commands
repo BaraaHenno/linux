@@ -1,7 +1,7 @@
 #update repository
 git pull origin main
 #update grub configuration
-grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 #xev
 xev -event keyboard
 #restart sxhkd
