@@ -6,3 +6,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 xev -event keyboard
 #restart sxhkd
 kill -10 $(pidof sxhkd)
+#proton vpn
+nmcli connection up --ask node-us-70.protonvpn.net.tcp
+nmcli connection down node-us-70.protonvpn.net.tcp
