@@ -7,5 +7,5 @@ xev -event keyboard
 #restart sxhkd
 kill -10 $(pidof sxhkd)
 #proton vpn
-nmcli connection up --ask node-us-70.protonvpn.net.tcp
-nmcli connection down node-us-70.protonvpn.net.tcp
+nmcli connection up --ask -servername-
+nmcli connection down -servername-
