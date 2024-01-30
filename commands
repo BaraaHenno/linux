@@ -9,3 +9,6 @@ kill -10 $(pidof sxhkd)
 #proton vpn
 nmcli connection up --ask -servername-
 nmcli connection down -servername-
+#udisks2
+udisksctl mount -b /dev/
+udisksctl unmount -b /dev/
