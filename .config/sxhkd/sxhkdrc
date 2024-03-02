@@ -1,10 +1,32 @@
 super + shift + x
-        kill -10 $(pidof sxhkd)
+		kill -10 $(pidof sxhkd)
 super + w
-        firefox
-super + KP_Add
-        pactl -- set-sink-volume 0 +5%
-super + KP_Subtract
-        pactl -- set-sink-volume 0 -5%
-#control + shift +k
-                xev -event keyboard
+	firefox
+super + p
+	firefox --private-window
+super + equal
+        pactl -- set-sink-volume 0 +8%
+super + minus
+	pactl -- set-sink-volume 0 -8%
+super + m
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+super + r
+	rofi -show drun
+super + f
+        pcmanfm
+super + shift + q
+		kill $(pidof Xorg)
+super + shift + F4
+		shutdown now
+super + shift + F5
+		reboot
+super + t
+	telegram-desktop
+super + n
+	nm-connection-editor
+super + shift + n
+		doas systemctl restart NetworkManager
+super + shift + m
+	alacritty -e mocp
+super + shift + h
+	alacritty -e htop 
