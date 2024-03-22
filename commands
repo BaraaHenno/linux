@@ -14,3 +14,5 @@ udisksctl mount -b /dev/
 udisksctl unmount -b /dev/
 #make dot files show at first
 export LC_COLLATE="C"
+#using vim in terminal
+set -o vi ".bashrc"
