@@ -16,3 +16,5 @@ udisksctl unmount -b /dev/
 export LC_COLLATE="C"
 #using vim in terminal
 set -o vi ".bashrc"
+#keyboard layout config
+vim /usr/share/X11/xkb/rules/base.lst
