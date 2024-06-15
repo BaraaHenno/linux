@@ -18,3 +18,5 @@ export LC_COLLATE="C"
 set -o vi ".bashrc"
 #keyboard layout config
 vim /usr/share/X11/xkb/rules/base.lst
+#NTFS hard drive mounting
+sudo ntfsfix -d /dev/
