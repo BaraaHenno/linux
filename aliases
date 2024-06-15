@@ -12,9 +12,29 @@ alias q='doas pacman -Ss'
 
 #GENERAL_ALIASES
 alias ll='ls -la --color=auto'
-alias grep='grep --color=auto'
 alias c='clear'
-alias vm='vim'
-neofetch
+alias vi='vim'
+alias brightness='xrandr --output HDMI-1 --brightness'
+alias vup='nmcli connection up'
+alias vdown='nmcli connection down'
+alias wifiup=' nmcli c up b1a6388c-9541-4e40-8768-a23c6f76bbd4'
+alias wifidown=' nmcli c down b1a6388c-9541-4e40-8768-a23c6f76bbd4'
+alias ethernetup='nmcli c up 16aeba6e-4447-31d8-807b-0d3302886515'
+alias ethernetdown='nmcli c down 16aeba6e-4447-31d8-807b-0d3302886515'
+alias usbnetup='nmcli c down 92444541-2e50-3f97-b657-8267a9fae847'
+alias usbnetdown='nmcli c down 92444541-2e50-3f97-b657-8267a9fae847'
+alias ethernet='wifidown && ethernetup'
+alias wifi='ethernetdown && wifiup'
+alias grup-update='doas grub-mkconfig -o /boot/grub/grub.cfg'
+alias automount='udiskie -a &'
+alias disableautomount='udiskie -A &'
+alias updatemirrors='rate-mirrors --allow-root --protocol https arch | doas tee /etc/pacman.d/mirrorlist'
+alias shc='vim .bashrc'
+alias dwconf='vi dwm/config.def.h'
+alias dwsrc='vi dwm/dwm.c'
+alias redwm='cd dwm/ && doas rm config.h && doas make clean install && kill $(pidof Xorg)'
+alias sxconf='vi .config/sxhkd/sxhkdrc'
+alias reboot='doas reboot'
+
 
 
