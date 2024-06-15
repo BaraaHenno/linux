@@ -2,6 +2,8 @@ super + shift + x
 		kill -10 $(pidof sxhkd)
 super + w
 	firefox
+super + shift + w
+	firefox --new-window https://web.whatsapp.com/ 
 super + p
 	firefox --private-window
 super + equal
@@ -11,7 +13,7 @@ super + minus
 super + m
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 super + r
-	rofi -show drun
+	rofi -show drun -show-icons
 super + f
         pcmanfm
 super + shift + q
@@ -23,10 +25,27 @@ super + shift + F5
 super + t
 	telegram-desktop
 super + n
-	nm-connection-editor
+	networkmanager_dmenu
+	#nm-connection-editor
 super + shift + n
 		doas systemctl restart NetworkManager
 super + shift + m
 	alacritty -e mocp
 super + shift + h
 	alacritty -e htop 
+super + shift + r
+	alacritty -e radioactive
+super + KP_Begin
+	mocp -G
+super + KP_Right
+	mocp -f
+super + KP_Left
+	mocp -r
+super + shift + s
+		dmenu_run -p bash
+super + KP_Enter
+	alacritty
+Print
+	flameshot gui
+super + shift + control + i
+	setxkbmap -layout us,ara -variant ,digits grp:menu_toggle caps:swapescape & xinput set-prop 'SIGMACHIP Usb Mouse' 'libinput Accel Profile Enabled' 0 1 0 & xinput set-prop 'SIGMACHIP Usb Mouse' 'libinput Accel Speed' -0.2
