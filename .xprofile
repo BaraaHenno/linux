@@ -6,7 +6,7 @@ picom &
 #xinput set-prop 'SIGMACHIP Usb Mouse' 'libinput Accel Profile Enabled' 0 1 0 &
 #xinput set-prop 'SIGMACHIP Usb Mouse' 'libinput Accel Speed' -0.2 &
 numlockx &
-feh --bg-scale Downloads/car.jpeg &
+feh --bg-scale Downloads/black.jpeg &
 xrandr --output HDMI-1 --brightness 0.6 &
 udiskie -a &
 copyq &
