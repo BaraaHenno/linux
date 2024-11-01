@@ -1,6 +1,6 @@
 xset s off -dpms &
 sxhkd &
-setxkbmap -layout us,ara -variant ,digits grp:menu_toggle caps:swapescape &
+#setxkbmap -layout us,ara -variant ,digits grp:menu_toggle caps:swapescape &
 #setxkbmap -layout us,ara -variant ,digits grp:menu_toggle grp:ralt_rshift_toggle grp:sclk_toggle caps:swapescape &
 picom &
 #xinput set-prop 'SIGMACHIP Usb Mouse' 'libinput Accel Profile Enabled' 0 1 0 &
